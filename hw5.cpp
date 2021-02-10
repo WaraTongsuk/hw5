@@ -18,7 +18,7 @@ int main( )
           case 'D':
                printf("Your score 50-59 points\n");
                break;
-          case 'E':
+          case 'F':
                printf("Your score 0-49 points\n");
                break;
           default:
