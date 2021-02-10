@@ -1,26 +1,28 @@
-#include "stdio.h"
-#include "conio.h"
-main()
+#include <stdio.h>
+char grade;
+int main( )
 {
-	int score,temp;
-	char grade;
-	printf("Enter the test score(0-100):");
-	scanf("%d",score);
-	temp = score / 10;
-	switch (temp)
-	{
-		case 10:
-		case 9 : grade = 'A';
-			break;
-		case 8 : grade = 'B';
-			break;
-		case 7 : grade = 'C';
-			break;
-		case 6 : grade = 'D';
-			break;
-		default : grade = 'F';
-			break;
-	}
-	printf("The grade is : %c\n",grade);
-	getch();
+     printf(" Enter your grade (A-F) : ");
+     scanf("%c",&grade);
+     switch(grade)
+     {
+          case 'A':
+               printf("Your score 80-100 points\n");
+               break;
+          case 'B':
+               printf("Your score 70-79 points\n");
+               break;
+          case 'C':
+               printf("Your score 60-69 points\n");
+              break;
+          case 'D':
+               printf("Your score 50-59 points\n");
+               break;
+          case 'E':
+               printf("Your score 0-49 points\n");
+               break;
+          default:
+               printf("Please enter character (A-F) only, Thank you");
+     }
+     	return(0);
 }
